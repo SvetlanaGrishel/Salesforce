@@ -4,6 +4,7 @@ import dto.Account;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import wrappers.Input;
 import wrappers.Picklist;
 import wrappers.TextArea;
@@ -11,19 +12,25 @@ import wrappers.TextArea;
 public class NewAccountModal extends BasePage {
 
     private static final By SAVE_BUTTON = By.xpath("//*[@name='SaveEdit']");
+    public static final String NEW_ACCOUNT_URL = "https://tms9-dev-ed.develop.lightning.force.com/lightning/o/Account/" +
+            "new?count=1&nooverride=1&useRecordTypeCheck=1&navigationLocation=LIST_VIEW&uid=173454703071286931";
 
     public NewAccountModal(WebDriver driver) {
         super(driver);
     }
 
     @Override
-    public BasePage isPageOpened() {
-        return null;
+    @Step("Check that 'New Account' modal is opened")
+    public NewAccountModal isPageOpened() {
+        wait.until(ExpectedConditions.visibilityOfElementLocated(SAVE_BUTTON));
+        return this;
     }
 
     @Override
-    public BasePage open() {
-        return null;
+    @Step("Open 'New Account' modal")
+    public NewAccountModal open() {
+        driver.get(NEW_ACCOUNT_URL);
+        return this;
     }
 
     @Step("Fill Account Information on 'New Account' modal")

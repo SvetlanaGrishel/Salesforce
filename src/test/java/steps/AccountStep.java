@@ -22,7 +22,8 @@ public class AccountStep {
     @Step("Create account with Account information, Address Information and Additional Information")
     public void create(Account account) {
         homePage.selectMenuOption("Accounts")
-                .openNewAccountModal()
+                .isPageOpened();
+        newAccountModal.open()
                 .fillAccountInformation(account)
                 .fillAddressInformation(account)
                 .fillAdditionalInformation(account)

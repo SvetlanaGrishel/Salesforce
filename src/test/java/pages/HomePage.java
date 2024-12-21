@@ -22,6 +22,7 @@ public class HomePage extends BasePage {
         return this;
     }
 
+    @Override
     @Step("Open 'Homepage'")
     public HomePage open() {
         driver.get(HOMEPAGE_URL);

@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 
 public class TextArea {
 
+    private final String TEXTAREA_PATTERN = "//label[text()='%s']//ancestor::lightning-textarea//textarea";
+
     WebDriver driver;
     String label;
 
@@ -14,6 +16,6 @@ public class TextArea {
     }
 
     public void write(String text) {
-        driver.findElement(By.xpath(String.format("//label[text()='%s']//ancestor::lightning-textarea//textarea", label))).sendKeys(text);
+        driver.findElement(By.xpath(String.format(TEXTAREA_PATTERN, label))).sendKeys(text);
     }
 }

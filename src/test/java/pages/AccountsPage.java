@@ -1,30 +1,31 @@
 package pages;
 
 import io.qameta.allure.Step;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class AccountsPage extends BasePage {
 
-    public static final String NEW_ACCOUNT_URL = "https://tms9-dev-ed.develop.lightning.force.com/lightning/o/Account/" +
-            "new?count=1&nooverride=1&useRecordTypeCheck=1&navigationLocation=LIST_VIEW&uid=173454703071286931";
+    public static final String ACCOUNTS_URL = "https://tms9-dev-ed.develop.lightning.force.com/lightning/o/Account/list?" +
+            "filterName=AllAccounts";
+    private final By SEARCH_VISIBLE = By.xpath("//div[@type='search']//input");
 
     public AccountsPage(WebDriver driver) {
         super(driver);
     }
 
     @Override
-    public BasePage isPageOpened() {
-        return null;
+    @Step("Check that 'Accounts' page is opened")
+    public AccountsPage isPageOpened() {
+        wait.until(ExpectedConditions.visibilityOfElementLocated(SEARCH_VISIBLE));
+        return this;
     }
 
     @Override
-    public BasePage open() {
-        return null;
-    }
-
-    @Step("Open 'New Account' modal")
-    public NewAccountModal openNewAccountModal() {
-        driver.get(NEW_ACCOUNT_URL);
-        return new NewAccountModal(driver);
+    @Step("Open 'Accounts' page")
+    public AccountsPage open() {
+        driver.get(ACCOUNTS_URL);
+        return this;
     }
 }
