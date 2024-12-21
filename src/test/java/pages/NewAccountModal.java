@@ -1,73 +1,70 @@
 package pages;
 
+import dto.Account;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import wrappers.Input;
 import wrappers.Picklist;
 import wrappers.TextArea;
 
 public class NewAccountModal extends BasePage {
 
+    private static final By SAVE_BUTTON = By.xpath("//*[@name='SaveEdit']");
+
     public NewAccountModal(WebDriver driver) {
         super(driver);
     }
 
-    public void fillAccountInformation(String accountName, String rating, String phone, String fax, String accountNumber,
-                                       String website, String accountSite, String tickerSymbol, String type,
-                                       String ownership, String industry, String employees, String annualRevenue,
-                                       String sicCode) {
-        new Input(driver, "Account Name").write(accountName);
-        new Picklist(driver, "Rating").select(rating);
-        new Input(driver, "Phone").write(phone);
-        new Input(driver, "Fax").write(fax);
-        new Input(driver, "Account Number").write(accountNumber);
-        new Input(driver, "Website").write(website);
-        new Input(driver, "Account Site").write(accountSite);
-        new Input(driver, "Ticker Symbol").write(tickerSymbol);
-        //кликаем на элемент, чтобы опуститься вниз
-        WebElement hiddenElement = driver.findElement(By.xpath("//label[text()='Type']"));
-        BasePage.clickJS(hiddenElement);
-        new Picklist(driver, "Type").select(type);
-        new Picklist(driver, "Ownership").select(ownership);
-        new Picklist(driver, "Industry").select(industry);
-        new Input(driver, "Employees").write(employees);
-        new Input(driver, "Annual Revenue").write(annualRevenue);
-        new Input(driver, "SIC Code").write(sicCode);
+    @Override
+    public BasePage isPageOpened() {
+        return null;
     }
 
-    public void fillAddressInformation(String billingStreet, String shippingStreet, String billingCity,
-                                       String billingState, String shippingCity, String shippingState,
-                                       String billingZipCode, String billingCountry, String shippingZipCode,
-                                       String shippingCountry) {
-        new TextArea(driver, "Billing Street").write(billingStreet);
-        new TextArea(driver, "Shipping Street").write(shippingStreet);
-        new Input(driver, "Billing City").write(billingCity);
-        new Input(driver, "Billing State/Province").write(billingState);
-        new Input(driver, "Shipping City").write(shippingCity);
-        new Input(driver, "Shipping State/Province").write(shippingState);
-        new Input(driver, "Billing Zip/Postal Code").write(billingZipCode);
-        new Input(driver, "Billing Country").write(billingCountry);
-        new Input(driver, "Shipping Zip/Postal Code").write(shippingZipCode);
-        new Input(driver, "Shipping Country").write(shippingCountry);
+    @Override
+    public BasePage open() {
+        return null;
     }
 
-    public void fillAdditionalInformation(String customerPriority, String sla, String slaExpirationDate,
-                                          String slaSerialNumber, String numberOfLocations, String upsellOpportunity,
-                                          String active) {
-        //кликаем на элемент, чтобы опуститься вниз
-        WebElement hiddenElement2 = driver.findElement(By.xpath("//label[text()='Customer Priority']//ancestor::lightning-picklist"));
-        BasePage.clickJS(hiddenElement2);
-        new Picklist(driver, "Customer Priority").select(customerPriority);
-        new Picklist(driver, "SLA").select(sla);
-        new Input(driver, "SLA Expiration Date").write(slaExpirationDate);
-        new Input(driver, "SLA Serial Number").write(slaSerialNumber);
-        new Input(driver, "Number of Locations").write(numberOfLocations);
-        new Picklist(driver, "Upsell Opportunity").select(upsellOpportunity);
-        new Picklist(driver, "Active").select(active);
+    @Step("Fill Account Information on 'New Account' modal")
+    public NewAccountModal fillAccountInformation(Account account) {
+        new Input(driver, "Account Name").write(account.getAccountName());
+        new Picklist(driver, "Rating").select(account.getRating());
+        new Input(driver, "Phone").write(account.getPhone());
+        new Input(driver, "Fax").write(account.getFax());
+        new Input(driver, "Account Number").write(account.getAccountNumber());
+        new Input(driver, "Employees").write(account.getEmployees());
+        return this;
     }
 
-    public void fillDescription(String description) {
-        new TextArea(driver, "Description").write(description);
+    @Step("Fill Address Information on 'New Account' modal")
+    public NewAccountModal fillAddressInformation(Account account) {
+        new TextArea(driver, "Billing Street").write(account.getBillingStreet());
+        new TextArea(driver, "Shipping Street").write(account.getShippingStreet());
+        new Input(driver, "Billing City").write(account.getBillingCity());
+        new Input(driver, "Billing State/Province").write(account.getBillingState());
+        new Input(driver, "Shipping City").write(account.getShippingCity());
+        new Input(driver, "Shipping State/Province").write(account.getShippingState());
+        new Input(driver, "Billing Zip/Postal Code").write(account.getBillingZipCode());
+        new Input(driver, "Billing Country").write(account.getBillingCountry());
+        new Input(driver, "Shipping Zip/Postal Code").write(account.getShippingZipCode());
+        new Input(driver, "Shipping Country").write(account.getShippingCountry());
+        return this;
+    }
+
+    @Step("Fill Additional Information on 'New Account' modal")
+    public NewAccountModal fillAdditionalInformation(Account account) {
+        new Picklist(driver, "Customer Priority").select(account.getCustomerPriority());
+        new Picklist(driver, "SLA").select(account.getSla());
+        new Input(driver, "SLA Serial Number").write(account.getSlaSerialNumber());
+        new Picklist(driver, "Upsell Opportunity").select(account.getUpsellOpportunity());
+        new Picklist(driver, "Active").select(account.getActive());
+        return this;
+    }
+
+    @Step("Click 'Save' button on 'New Account' modal")
+    public AccountsPage clickSaveButton() {
+        driver.findElement(SAVE_BUTTON).click();
+        return new AccountsPage(driver);
     }
 }

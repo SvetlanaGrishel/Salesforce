@@ -19,6 +19,9 @@ public abstract class BasePage {
         wait = new WebDriverWait(driver, Duration.ofSeconds(20));
     }
 
+    public abstract BasePage isPageOpened();
+    public abstract BasePage open();
+
     //клик на перекрытый элемент
     public static void clickJS(WebElement element) {
         JavascriptExecutor js = (JavascriptExecutor) driver;

@@ -11,7 +11,12 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
+import pages.AccountsPage;
+import pages.HomePage;
+import pages.LoginPage;
 import pages.NewAccountModal;
+import steps.AccountStep;
+import steps.LoginStep;
 import tests.TestListener;
 
 import java.time.Duration;
@@ -21,8 +26,13 @@ import static utils.AllureUtils.takeScreenshot;
 @Listeners(TestListener.class)
 public class BaseTest {
 
-    public WebDriver driver;
-    public NewAccountModal newAccountModal;
+    protected WebDriver driver;
+    protected NewAccountModal newAccountModal;
+    protected LoginPage loginPage;
+    protected AccountsPage accountsPage;
+    protected AccountStep accountStep;
+    protected LoginStep loginStep;
+    protected HomePage homePage;
 
     @Parameters({"browser"})
     @BeforeMethod
@@ -43,7 +53,13 @@ public class BaseTest {
             driver = new FirefoxDriver(firefoxOptions);
         }
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
         newAccountModal = new NewAccountModal(driver);
+        loginPage = new LoginPage(driver);
+        homePage = new HomePage(driver);
+        accountsPage = new AccountsPage(driver);
+        accountStep = new AccountStep(driver);
+        loginStep = new LoginStep(driver);
     }
 
     @Step("Close browser")
