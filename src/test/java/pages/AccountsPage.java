@@ -5,6 +5,9 @@ import org.openqa.selenium.WebDriver;
 
 public class AccountsPage extends BasePage {
 
+    public static final String NEW_ACCOUNT_URL = "https://tms9-dev-ed.develop.lightning.force.com/lightning/o/Account/" +
+            "new?count=1&nooverride=1&useRecordTypeCheck=1&navigationLocation=LIST_VIEW&uid=173454703071286931";
+
     public AccountsPage(WebDriver driver) {
         super(driver);
     }
@@ -18,9 +21,6 @@ public class AccountsPage extends BasePage {
     public BasePage open() {
         return null;
     }
-
-    public static final String NEW_ACCOUNT_URL = "https://tms9-dev-ed.develop.lightning.force.com/lightning/o/Account/" +
-            "new?count=1&nooverride=1&useRecordTypeCheck=1&navigationLocation=LIST_VIEW&uid=173454703071286931";
 
     @Step("Open 'New Account' modal")
     public NewAccountModal openNewAccountModal() {

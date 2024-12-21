@@ -8,6 +8,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 public class HomePage extends BasePage {
 
     private final String MENU_OPTION_PATTERN = "//span[text()='%s']//ancestor::one-app-nav-bar-item-root[@role='listitem']";
+    private final String USER_IMAGE_VISIBLE_PATTERN = "//img[@alt='User']//ancestor::button[@type='button']";
+    private final String HOMEPAGE_URL = "https://tms9-dev-ed.develop.lightning.force.com/lightning/page/home";
 
     public HomePage(WebDriver driver) {
         super(driver);
@@ -16,14 +18,13 @@ public class HomePage extends BasePage {
     @Override
     @Step("Check that 'Homepage' is opened")
     public HomePage isPageOpened() {
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//img[@alt='User']//ancestor::" +
-                "button[@type='button']")));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(USER_IMAGE_VISIBLE_PATTERN)));
         return this;
     }
 
     @Step("Open 'Homepage'")
     public HomePage open() {
-        driver.get("https://tms9-dev-ed.develop.lightning.force.com/lightning/page/home");
+        driver.get(HOMEPAGE_URL);
         return this;
     }
 
