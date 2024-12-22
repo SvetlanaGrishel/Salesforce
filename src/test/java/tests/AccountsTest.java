@@ -1,21 +1,47 @@
 package tests;
 
+import com.github.javafaker.Faker;
 import dto.Account;
 import io.qameta.allure.Description;
+import lombok.extern.log4j.Log4j2;
 import org.testng.annotations.Test;
 import tests.base.BaseTest;
 
-import static dto.AccountFactory.getAccount;
-
+@Log4j2
 public class AccountsTest extends BaseTest {
 
-    Account account = getAccount("Hot", "High", "Gold", "Yes", "Yes");
+    Faker faker = new Faker();
 
-    @Test(testName = "Create a new account", description = "Create a new account with account, address, additionla " +
-            "information")
+    Account account_full = Account.builder()
+            .accountName(faker.company().name())
+            .phone(faker.phoneNumber().cellPhone())
+            .fax(faker.phoneNumber().cellPhone())
+            .rating("Hot")
+            .accountNumber(faker.idNumber().valid())
+            .employees(faker.number().digit())
+            .billingStreet(faker.address().streetAddress())
+            .shippingStreet(faker.address().streetAddress())
+            .billingCity(faker.address().city())
+            .billingState(faker.address().state())
+            .shippingCity(faker.address().city())
+            .shippingState(faker.address().state())
+            .billingZipCode(faker.address().zipCode())
+            .billingCountry(faker.address().country())
+            .shippingZipCode(faker.address().zipCode())
+            .shippingCountry(faker.address().country())
+            .customerPriority("High")
+            .sla("Gold")
+            .slaSerialNumber(faker.number().digit())
+            .upsellOpportunity("Yes")
+            .active("Yes")
+            .build();
+
+    @Test(testName = "Create a new account with full information", description = "Create a new account with account, " +
+            "address, additional information")
     @Description("Create a new account in 'Salesforce' with valid data")
     public void checkCreateAccount() {
+        log.info("Create a new account in 'Salesforce' system");
         loginStep.login();
-        accountStep.create(account);
+        accountStep.create(account_full);
     }
 }

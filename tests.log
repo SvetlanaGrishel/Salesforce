@@ -1,0 +1,255 @@
+2024-12-22 09:56:50.250 INFO [main] [tests.TestListener] - ======================================== STARTING TEST checkCreateAccount ========================================
+
+2024-12-22 09:56:50.313 INFO [main] [tests.AccountsTest] - Create a new account in 'Saleforce' system
+2024-12-22 09:56:50.314 INFO [main] [pages.LoginPage] - Open 'Login' page
+2024-12-22 09:56:51.143 INFO [main] [pages.LoginPage] - Log in using credentials 'tborodich@tms.sandbox' and 'Password001'
+2024-12-22 09:57:01.675 INFO [main] [pages.NewAccountModal] - Fill Account Information on 'New Account' modal 'Schroeder, Kassulke and Waters'
+2024-12-22 09:57:01.702 INFO [main] [wrappers.Input] - Writing 'Schroeder, Kassulke and Waters' into 'Account Name'
+2024-12-22 09:57:03.445 INFO [main] [wrappers.Picklist] - Selecting 'Hot' inside picklist 'Rating'
+2024-12-22 09:57:04.294 INFO [main] [wrappers.Input] - Writing '685-824-1338' into 'Phone'
+2024-12-22 09:57:04.591 INFO [main] [wrappers.Input] - Writing '1-602-231-6403' into 'Fax'
+2024-12-22 09:57:04.876 INFO [main] [wrappers.Input] - Writing '769-48-9763' into 'Account Number'
+2024-12-22 09:57:05.135 INFO [main] [wrappers.Input] - Writing '3' into 'Employees'
+2024-12-22 09:57:06.036 INFO [main] [wrappers.Input] - Writing 'South Amalhaven' into 'Billing City'
+2024-12-22 09:57:06.424 INFO [main] [wrappers.Input] - Writing 'Wyoming' into 'Billing State/Province'
+2024-12-22 09:57:06.664 INFO [main] [wrappers.Input] - Writing 'Waelchibury' into 'Shipping City'
+2024-12-22 09:57:06.981 INFO [main] [wrappers.Input] - Writing 'Illinois' into 'Shipping State/Province'
+2024-12-22 09:57:07.286 INFO [main] [wrappers.Input] - Writing '21999' into 'Billing Zip/Postal Code'
+2024-12-22 09:57:07.474 INFO [main] [wrappers.Input] - Writing 'Belize' into 'Billing Country'
+2024-12-22 09:57:07.674 INFO [main] [wrappers.Input] - Writing '65117' into 'Shipping Zip/Postal Code'
+2024-12-22 09:57:07.861 INFO [main] [wrappers.Input] - Writing 'Guam' into 'Shipping Country'
+2024-12-22 09:57:08.091 INFO [main] [wrappers.Picklist] - Selecting 'High' inside picklist 'Customer Priority'
+2024-12-22 09:57:08.430 INFO [main] [wrappers.Picklist] - Selecting 'Gold' inside picklist 'SLA'
+2024-12-22 09:57:08.774 INFO [main] [wrappers.Input] - Writing '8' into 'SLA Serial Number'
+2024-12-22 09:57:08.944 INFO [main] [wrappers.Picklist] - Selecting 'Yes' inside picklist 'Upsell Opportunity'
+2024-12-22 09:57:09.235 INFO [main] [wrappers.Picklist] - Selecting 'Yes' inside picklist 'Active'
+2024-12-22 10:01:15.386 INFO [main] [tests.TestListener] - ======================================== STARTING TEST checkCreateAccountAccountNameOnly ========================================
+
+2024-12-22 10:01:15.458 INFO [main] [tests.AccountsTest] - Create a new account in 'Salesforce' system only with Account Name
+2024-12-22 10:01:15.459 INFO [main] [pages.LoginPage] - Open 'Login' page
+2024-12-22 10:01:16.251 INFO [main] [pages.LoginPage] - Log in using credentials 'tborodich@tms.sandbox' and 'Password001'
+2024-12-22 10:01:25.987 INFO [main] [pages.NewAccountModal] - Fill Account Information on 'New Account' modal 'Heathcote, Pollich and Kirlin'
+2024-12-22 10:01:25.987 INFO [main] [wrappers.Input] - Writing 'Heathcote, Pollich and Kirlin' into 'Account Name'
+2024-12-22 10:01:27.647 INFO [main] [wrappers.Picklist] - Selecting 'null' inside picklist 'Rating'
+2024-12-22 10:02:18.650 INFO [main] [tests.TestListener] - ======================================== STARTING TEST checkCreateAccountAccountNameOnly ========================================
+
+2024-12-22 10:02:18.710 INFO [main] [tests.AccountsTest] - Create a new account in 'Salesforce' system only with Account Name
+2024-12-22 10:02:18.710 INFO [main] [pages.LoginPage] - Open 'Login' page
+2024-12-22 10:02:19.640 INFO [main] [pages.LoginPage] - Log in using credentials 'tborodich@tms.sandbox' and 'Password001'
+2024-12-22 10:02:29.352 INFO [main] [pages.NewAccountModal] - Fill Account Information on 'New Account' modal 'Purdy-Bernier'
+2024-12-22 10:02:29.355 INFO [main] [wrappers.Input] - Writing 'Purdy-Bernier' into 'Account Name'
+2024-12-22 10:02:30.749 INFO [main] [wrappers.Picklist] - Selecting 'null' inside picklist 'Rating'
+2024-12-22 10:13:09.183 INFO [main] [tests.TestListener] - ======================================== STARTING TEST checkCreateAccount ========================================
+
+2024-12-22 10:13:09.240 INFO [main] [tests.AccountsTest] - Create a new account in 'Salesforce' system
+2024-12-22 10:13:09.241 INFO [main] [pages.LoginPage] - Open 'Login' page
+2024-12-22 10:13:10.102 INFO [main] [pages.LoginPage] - Log in using credentials 'tborodich@tms.sandbox' and 'Password001'
+2024-12-22 10:13:12.914 INFO [main] [pages.HomePage] - Open 'Homepage' page
+2024-12-22 10:13:17.824 INFO [main] [pages.HomePage] - Option {optionName} is selected in the menu
+2024-12-22 10:13:19.941 INFO [main] [pages.NewAccountModal] - Open 'New Account' modal
+2024-12-22 10:13:21.048 INFO [main] [pages.NewAccountModal] - Fill Account Information on 'New Account' modal 'Huel-Waters'
+2024-12-22 10:13:21.049 INFO [main] [wrappers.Input] - Writing 'Huel-Waters' into 'Account Name'
+2024-12-22 10:13:22.377 INFO [main] [wrappers.Picklist] - Selecting 'Hot' inside picklist 'Rating'
+2024-12-22 10:13:23.235 INFO [main] [wrappers.Input] - Writing '1-685-431-5833' into 'Phone'
+2024-12-22 10:13:23.512 INFO [main] [wrappers.Input] - Writing '1-931-511-0916' into 'Fax'
+2024-12-22 10:13:23.762 INFO [main] [wrappers.Input] - Writing '781-16-2986' into 'Account Number'
+2024-12-22 10:13:23.977 INFO [main] [wrappers.Input] - Writing '3' into 'Employees'
+2024-12-22 10:13:24.116 INFO [main] [pages.NewAccountModal] - Fill Address Information on 'New Account' modal 'Huel-Waters'
+2024-12-22 10:13:24.849 INFO [main] [wrappers.Input] - Writing 'Theodoreside' into 'Billing City'
+2024-12-22 10:13:25.271 INFO [main] [wrappers.Input] - Writing 'Mississippi' into 'Billing State/Province'
+2024-12-22 10:13:25.653 INFO [main] [wrappers.Input] - Writing 'New Denis' into 'Shipping City'
+2024-12-22 10:13:25.885 INFO [main] [wrappers.Input] - Writing 'Mississippi' into 'Shipping State/Province'
+2024-12-22 10:13:26.193 INFO [main] [wrappers.Input] - Writing '53196' into 'Billing Zip/Postal Code'
+2024-12-22 10:13:26.381 INFO [main] [wrappers.Input] - Writing 'Chad' into 'Billing Country'
+2024-12-22 10:13:26.561 INFO [main] [wrappers.Input] - Writing '32162-5567' into 'Shipping Zip/Postal Code'
+2024-12-22 10:13:26.843 INFO [main] [wrappers.Input] - Writing 'Djibouti' into 'Shipping Country'
+2024-12-22 10:13:27.098 INFO [main] [pages.NewAccountModal] - Fill Additional Information on 'New Account' modal 'Huel-Waters'
+2024-12-22 10:13:27.098 INFO [main] [wrappers.Picklist] - Selecting 'High' inside picklist 'Customer Priority'
+2024-12-22 10:13:52.862 INFO [main] [tests.TestListener] - ======================================== STARTING TEST checkCreateAccount ========================================
+
+2024-12-22 10:13:52.923 INFO [main] [tests.AccountsTest] - Create a new account in 'Salesforce' system
+2024-12-22 10:13:52.923 INFO [main] [pages.LoginPage] - Open 'Login' page
+2024-12-22 10:13:53.536 INFO [main] [pages.LoginPage] - Log in using credentials 'tborodich@tms.sandbox' and 'Password001'
+2024-12-22 10:13:55.754 INFO [main] [pages.HomePage] - Open 'Homepage' page
+2024-12-22 10:13:58.799 INFO [main] [pages.HomePage] - Option {optionName} is selected in the menu
+2024-12-22 10:14:01.041 INFO [main] [pages.NewAccountModal] - Open 'New Account' modal
+2024-12-22 10:14:02.345 INFO [main] [pages.NewAccountModal] - Fill Account Information on 'New Account' modal 'O'Hara and Sons'
+2024-12-22 10:14:02.348 INFO [main] [wrappers.Input] - Writing 'O'Hara and Sons' into 'Account Name'
+2024-12-22 10:14:03.572 INFO [main] [wrappers.Picklist] - Selecting 'Hot' inside picklist 'Rating'
+2024-12-22 10:14:04.391 INFO [main] [wrappers.Input] - Writing '223.816.5706' into 'Phone'
+2024-12-22 10:14:04.628 INFO [main] [wrappers.Input] - Writing '1-647-379-7764' into 'Fax'
+2024-12-22 10:14:04.889 INFO [main] [wrappers.Input] - Writing '018-17-5935' into 'Account Number'
+2024-12-22 10:14:05.118 INFO [main] [wrappers.Input] - Writing '1' into 'Employees'
+2024-12-22 10:14:05.251 INFO [main] [pages.NewAccountModal] - Fill Address Information on 'New Account' modal 'O'Hara and Sons'
+2024-12-22 10:14:06.091 INFO [main] [wrappers.Input] - Writing 'West Ivytown' into 'Billing City'
+2024-12-22 10:14:06.390 INFO [main] [wrappers.Input] - Writing 'West Virginia' into 'Billing State/Province'
+2024-12-22 10:14:06.703 INFO [main] [wrappers.Input] - Writing 'Luanaberg' into 'Shipping City'
+2024-12-22 10:14:06.951 INFO [main] [wrappers.Input] - Writing 'Oregon' into 'Shipping State/Province'
+2024-12-22 10:14:07.451 INFO [main] [wrappers.Input] - Writing '57176' into 'Billing Zip/Postal Code'
+2024-12-22 10:14:07.653 INFO [main] [wrappers.Input] - Writing 'Afghanistan' into 'Billing Country'
+2024-12-22 10:14:07.983 INFO [main] [wrappers.Input] - Writing '99781-5633' into 'Shipping Zip/Postal Code'
+2024-12-22 10:14:08.216 INFO [main] [wrappers.Input] - Writing 'Svalbard & Jan Mayen Islands' into 'Shipping Country'
+2024-12-22 10:14:08.738 INFO [main] [pages.NewAccountModal] - Fill Additional Information on 'New Account' modal 'O'Hara and Sons'
+2024-12-22 10:14:08.738 INFO [main] [wrappers.Picklist] - Selecting 'High' inside picklist 'Customer Priority'
+2024-12-22 10:14:42.199 INFO [main] [tests.TestListener] - ======================================== STARTING TEST checkCreateAccount ========================================
+
+2024-12-22 10:14:42.256 INFO [main] [tests.AccountsTest] - Create a new account in 'Salesforce' system
+2024-12-22 10:14:42.257 INFO [main] [pages.LoginPage] - Open 'Login' page
+2024-12-22 10:14:42.985 INFO [main] [pages.LoginPage] - Log in using credentials 'tborodich@tms.sandbox' and 'Password001'
+2024-12-22 10:14:44.867 INFO [main] [pages.HomePage] - Open 'Homepage' page
+2024-12-22 10:14:49.328 INFO [main] [pages.HomePage] - Option {optionName} is selected in the menu
+2024-12-22 10:14:51.192 INFO [main] [pages.NewAccountModal] - Open 'New Account' modal
+2024-12-22 10:14:52.244 INFO [main] [pages.NewAccountModal] - Fill Account Information on 'New Account' modal 'Will-Sawayn'
+2024-12-22 10:14:52.249 INFO [main] [wrappers.Input] - Writing 'Will-Sawayn' into 'Account Name'
+2024-12-22 10:14:53.666 INFO [main] [wrappers.Picklist] - Selecting 'Hot' inside picklist 'Rating'
+2024-12-22 10:14:54.241 INFO [main] [wrappers.Input] - Writing '703-688-2393' into 'Phone'
+2024-12-22 10:14:54.484 INFO [main] [wrappers.Input] - Writing '363-694-4633' into 'Fax'
+2024-12-22 10:14:54.754 INFO [main] [wrappers.Input] - Writing '266-03-3026' into 'Account Number'
+2024-12-22 10:14:54.989 INFO [main] [wrappers.Input] - Writing '5' into 'Employees'
+2024-12-22 10:14:55.112 INFO [main] [pages.NewAccountModal] - Fill Address Information on 'New Account' modal 'Will-Sawayn'
+2024-12-22 10:14:55.943 INFO [main] [wrappers.Input] - Writing 'South Randall' into 'Billing City'
+2024-12-22 10:14:56.277 INFO [main] [wrappers.Input] - Writing 'Montana' into 'Billing State/Province'
+2024-12-22 10:14:56.635 INFO [main] [wrappers.Input] - Writing 'South Angela' into 'Shipping City'
+2024-12-22 10:14:57.027 INFO [main] [wrappers.Input] - Writing 'Alaska' into 'Shipping State/Province'
+2024-12-22 10:14:57.247 INFO [main] [wrappers.Input] - Writing '90576' into 'Billing Zip/Postal Code'
+2024-12-22 10:14:57.438 INFO [main] [wrappers.Input] - Writing 'Venezuela' into 'Billing Country'
+2024-12-22 10:14:57.662 INFO [main] [wrappers.Input] - Writing '31119' into 'Shipping Zip/Postal Code'
+2024-12-22 10:14:57.850 INFO [main] [wrappers.Input] - Writing 'Brazil' into 'Shipping Country'
+2024-12-22 10:14:58.040 INFO [main] [pages.NewAccountModal] - Fill Additional Information on 'New Account' modal 'Will-Sawayn'
+2024-12-22 10:14:58.040 INFO [main] [wrappers.Picklist] - Selecting 'High' inside picklist 'Customer Priority'
+2024-12-22 10:15:41.861 INFO [main] [tests.TestListener] - ======================================== STARTING TEST checkCreateAccount ========================================
+
+2024-12-22 10:15:41.940 INFO [main] [tests.AccountsTest] - Create a new account in 'Salesforce' system
+2024-12-22 10:15:41.941 INFO [main] [pages.LoginPage] - Open 'Login' page
+2024-12-22 10:15:42.635 INFO [main] [pages.LoginPage] - Log in using credentials 'tborodich@tms.sandbox' and 'Password001'
+2024-12-22 10:15:44.846 INFO [main] [pages.HomePage] - Open 'Homepage' page
+2024-12-22 10:15:49.562 INFO [main] [pages.HomePage] - Option {optionName} is selected in the menu
+2024-12-22 10:15:49.624 INFO [main] [tests.TestListener] - ======================================== STARTING TEST checkCreateAccount ========================================
+
+2024-12-22 10:15:49.753 INFO [main] [tests.AccountsTest] - Create a new account in 'Salesforce' system
+2024-12-22 10:15:49.754 INFO [main] [pages.LoginPage] - Open 'Login' page
+2024-12-22 10:15:50.654 INFO [main] [pages.LoginPage] - Log in using credentials 'tborodich@tms.sandbox' and 'Password001'
+2024-12-22 10:15:51.943 INFO [main] [pages.NewAccountModal] - Open 'New Account' modal
+2024-12-22 10:15:52.924 INFO [main] [pages.NewAccountModal] - Fill Account Information on 'New Account' modal 'Schumm, Stark and Reynolds'
+2024-12-22 10:15:52.927 INFO [main] [wrappers.Input] - Writing 'Schumm, Stark and Reynolds' into 'Account Name'
+2024-12-22 10:15:53.161 INFO [main] [pages.HomePage] - Open 'Homepage' page
+2024-12-22 10:15:54.512 INFO [main] [wrappers.Picklist] - Selecting 'Hot' inside picklist 'Rating'
+2024-12-22 10:15:55.348 INFO [main] [wrappers.Input] - Writing '757-541-8428' into 'Phone'
+2024-12-22 10:15:55.626 INFO [main] [wrappers.Input] - Writing '117.034.0211' into 'Fax'
+2024-12-22 10:15:55.915 INFO [main] [wrappers.Input] - Writing '418-38-4338' into 'Account Number'
+2024-12-22 10:15:56.238 INFO [main] [wrappers.Input] - Writing '0' into 'Employees'
+2024-12-22 10:15:56.388 INFO [main] [pages.NewAccountModal] - Fill Address Information on 'New Account' modal 'Schumm, Stark and Reynolds'
+2024-12-22 10:15:57.300 INFO [main] [pages.HomePage] - Option {optionName} is selected in the menu
+2024-12-22 10:15:57.316 INFO [main] [wrappers.Input] - Writing 'New Ivette' into 'Billing City'
+2024-12-22 10:15:57.614 INFO [main] [wrappers.Input] - Writing 'New Hampshire' into 'Billing State/Province'
+2024-12-22 10:15:57.980 INFO [main] [wrappers.Input] - Writing 'South Cheryllborough' into 'Shipping City'
+2024-12-22 10:15:58.452 INFO [main] [wrappers.Input] - Writing 'Nevada' into 'Shipping State/Province'
+2024-12-22 10:15:58.709 INFO [main] [wrappers.Input] - Writing '61889' into 'Billing Zip/Postal Code'
+2024-12-22 10:15:58.907 INFO [main] [wrappers.Input] - Writing 'British Indian Ocean Territory (Chagos Archipelago)' into 'Billing Country'
+2024-12-22 10:15:59.560 INFO [main] [pages.NewAccountModal] - Open 'New Account' modal
+2024-12-22 10:15:59.966 INFO [main] [wrappers.Input] - Writing '60788' into 'Shipping Zip/Postal Code'
+2024-12-22 10:16:00.212 INFO [main] [wrappers.Input] - Writing 'Sri Lanka' into 'Shipping Country'
+2024-12-22 10:16:00.500 INFO [main] [pages.NewAccountModal] - Fill Additional Information on 'New Account' modal 'Schumm, Stark and Reynolds'
+2024-12-22 10:16:00.500 INFO [main] [wrappers.Picklist] - Selecting 'High' inside picklist 'Customer Priority'
+2024-12-22 10:16:00.873 INFO [main] [wrappers.Picklist] - Selecting 'Gold' inside picklist 'SLA'
+2024-12-22 10:16:01.012 INFO [main] [pages.NewAccountModal] - Fill Account Information on 'New Account' modal 'Kerluke, Bins and Wiza'
+2024-12-22 10:16:01.014 INFO [main] [wrappers.Input] - Writing 'Kerluke, Bins and Wiza' into 'Account Name'
+2024-12-22 10:16:01.203 INFO [main] [wrappers.Input] - Writing '2' into 'SLA Serial Number'
+2024-12-22 10:16:01.332 INFO [main] [wrappers.Picklist] - Selecting 'Yes' inside picklist 'Upsell Opportunity'
+2024-12-22 10:16:01.925 INFO [main] [wrappers.Picklist] - Selecting 'Yes' inside picklist 'Active'
+2024-12-22 10:16:02.233 INFO [main] [pages.NewAccountModal] - Click 'Save' button on 'New Account' modal
+2024-12-22 10:16:02.555 INFO [main] [wrappers.Picklist] - Selecting 'Hot' inside picklist 'Rating'
+2024-12-22 10:16:03.177 INFO [main] [wrappers.Input] - Writing '1-491-974-5015' into 'Phone'
+2024-12-22 10:16:03.445 INFO [main] [wrappers.Input] - Writing '614.135.7107' into 'Fax'
+2024-12-22 10:16:03.668 INFO [main] [wrappers.Input] - Writing '779-30-9423' into 'Account Number'
+2024-12-22 10:16:03.950 INFO [main] [wrappers.Input] - Writing '0' into 'Employees'
+2024-12-22 10:16:04.092 INFO [main] [pages.NewAccountModal] - Fill Address Information on 'New Account' modal 'Kerluke, Bins and Wiza'
+2024-12-22 10:16:04.856 INFO [main] [wrappers.Input] - Writing 'South Wilber' into 'Billing City'
+2024-12-22 10:16:05.206 INFO [main] [wrappers.Input] - Writing 'Nebraska' into 'Billing State/Province'
+2024-12-22 10:16:05.492 INFO [main] [wrappers.Input] - Writing 'South Francesbury' into 'Shipping City'
+2024-12-22 10:16:05.927 INFO [main] [wrappers.Input] - Writing 'Hawaii' into 'Shipping State/Province'
+2024-12-22 10:16:06.154 INFO [main] [wrappers.Input] - Writing '35858' into 'Billing Zip/Postal Code'
+2024-12-22 10:16:06.373 INFO [main] [wrappers.Input] - Writing 'Saint Kitts and Nevis' into 'Billing Country'
+2024-12-22 10:16:07.088 INFO [main] [wrappers.Input] - Writing '39608-6389' into 'Shipping Zip/Postal Code'
+2024-12-22 10:16:07.383 INFO [main] [wrappers.Input] - Writing 'French Guiana' into 'Shipping Country'
+2024-12-22 10:16:07.775 INFO [main] [pages.NewAccountModal] - Fill Additional Information on 'New Account' modal 'Kerluke, Bins and Wiza'
+2024-12-22 10:16:07.776 INFO [main] [wrappers.Picklist] - Selecting 'High' inside picklist 'Customer Priority'
+2024-12-22 10:16:08.345 INFO [main] [wrappers.Picklist] - Selecting 'Gold' inside picklist 'SLA'
+2024-12-22 10:16:08.780 INFO [main] [wrappers.Input] - Writing '1' into 'SLA Serial Number'
+2024-12-22 10:16:08.941 INFO [main] [wrappers.Picklist] - Selecting 'Yes' inside picklist 'Upsell Opportunity'
+2024-12-22 10:16:09.373 INFO [main] [wrappers.Picklist] - Selecting 'Yes' inside picklist 'Active'
+2024-12-22 10:16:09.724 INFO [main] [pages.NewAccountModal] - Click 'Save' button on 'New Account' modal
+2024-12-22 10:29:06.992 INFO [main] [tests.TestListener] - ======================================== STARTING TEST checkCreateAccount ========================================
+
+2024-12-22 10:29:07.049 INFO [main] [tests.AccountsTest] - Create a new account in 'Salesforce' system
+2024-12-22 10:29:07.050 INFO [main] [steps.LoginStep] - Login to the 'Salesforce' system with credentials {username} and {password}
+2024-12-22 10:29:07.051 INFO [main] [pages.LoginPage] - Open 'Login' page
+2024-12-22 10:29:08.510 INFO [main] [pages.LoginPage] - Log in using credentials 'tborodich@tms.sandbox' and 'Password001'
+2024-12-22 10:29:11.291 INFO [main] [pages.HomePage] - Open 'Homepage' page
+2024-12-22 10:29:14.612 INFO [main] [steps.AccountStep] - Creating new account, filling information
+2024-12-22 10:29:14.613 INFO [main] [pages.HomePage] - Option {optionName} is selected in the menu
+2024-12-22 10:29:16.669 INFO [main] [pages.NewAccountModal] - Open 'New Account' modal
+2024-12-22 10:29:18.044 INFO [main] [pages.NewAccountModal] - Fill Account Information on 'New Account' modal 'Robel, Kub and Smitham'
+2024-12-22 10:29:18.044 INFO [main] [wrappers.Input] - Writing 'Robel, Kub and Smitham' into 'Account Name'
+2024-12-22 10:29:19.649 INFO [main] [wrappers.Picklist] - Selecting 'Hot' inside picklist 'Rating'
+2024-12-22 10:29:20.421 INFO [main] [wrappers.Input] - Writing '1-274-385-4011' into 'Phone'
+2024-12-22 10:29:20.695 INFO [main] [wrappers.Input] - Writing '(388) 453-3429' into 'Fax'
+2024-12-22 10:29:20.956 INFO [main] [wrappers.Input] - Writing '497-81-2774' into 'Account Number'
+2024-12-22 10:29:21.218 INFO [main] [wrappers.Input] - Writing '4' into 'Employees'
+2024-12-22 10:29:21.393 INFO [main] [pages.NewAccountModal] - Fill Address Information on 'New Account' modal 'Robel, Kub and Smitham'
+2024-12-22 10:29:21.417 INFO [main] [wrappers.TextArea] - Writing '76588 Joan Harbor' into 'Billing Street' textarea
+2024-12-22 10:29:21.860 INFO [main] [wrappers.TextArea] - Writing '79935 MacGyver Plain' into 'Shipping Street' textarea
+2024-12-22 10:29:22.302 INFO [main] [wrappers.Input] - Writing 'Enolaside' into 'Billing City'
+2024-12-22 10:29:22.579 INFO [main] [wrappers.Input] - Writing 'North Dakota' into 'Billing State/Province'
+2024-12-22 10:29:22.894 INFO [main] [wrappers.Input] - Writing 'East Alphonsotown' into 'Shipping City'
+2024-12-22 10:29:23.338 INFO [main] [wrappers.Input] - Writing 'Texas' into 'Shipping State/Province'
+2024-12-22 10:29:23.585 INFO [main] [wrappers.Input] - Writing '45264' into 'Billing Zip/Postal Code'
+2024-12-22 10:29:23.979 INFO [main] [wrappers.Input] - Writing 'Western Sahara' into 'Billing Country'
+2024-12-22 10:29:24.439 INFO [main] [wrappers.Input] - Writing '25740-4155' into 'Shipping Zip/Postal Code'
+2024-12-22 10:29:24.813 INFO [main] [wrappers.Input] - Writing 'Singapore' into 'Shipping Country'
+2024-12-22 10:29:25.186 INFO [main] [pages.NewAccountModal] - Fill Additional Information on 'New Account' modal 'Robel, Kub and Smitham'
+2024-12-22 10:29:25.186 INFO [main] [wrappers.Picklist] - Selecting 'High' inside picklist 'Customer Priority'
+2024-12-22 10:29:25.655 INFO [main] [wrappers.Picklist] - Selecting 'Gold' inside picklist 'SLA'
+2024-12-22 10:29:26.020 INFO [main] [wrappers.Input] - Writing '7' into 'SLA Serial Number'
+2024-12-22 10:29:26.167 INFO [main] [wrappers.Picklist] - Selecting 'Yes' inside picklist 'Upsell Opportunity'
+2024-12-22 10:29:26.674 INFO [main] [wrappers.Picklist] - Selecting 'Yes' inside picklist 'Active'
+2024-12-22 10:29:26.982 INFO [main] [pages.NewAccountModal] - Click 'Save' button on 'New Account' modal
+2024-12-22 10:29:27.158 INFO [main] [tests.TestListener] - ======================================== FINISHED TEST checkCreateAccount Duration: 20s ========================================
+
+2024-12-22 10:32:50.010 INFO [main] [tests.TestListener] - ======================================== STARTING TEST checkCreateAccount ========================================
+
+2024-12-22 10:32:50.082 INFO [main] [tests.AccountsTest] - Create a new account in 'Salesforce' system
+2024-12-22 10:32:50.082 INFO [main] [steps.LoginStep] - Login to the 'Salesforce' system with credentials
+2024-12-22 10:32:50.083 INFO [main] [pages.LoginPage] - Open 'Login' page
+2024-12-22 10:32:50.740 INFO [main] [pages.LoginPage] - Log in using credentials 'tborodich@tms.sandbox' and 'Password001'
+2024-12-22 10:32:55.709 INFO [main] [pages.HomePage] - Open 'Homepage' page
+2024-12-22 10:32:58.144 INFO [main] [steps.AccountStep] - Creating new account, filling information
+2024-12-22 10:32:58.145 INFO [main] [pages.HomePage] - Option 'Accounts' is selected in the menu
+2024-12-22 10:33:00.240 INFO [main] [pages.NewAccountModal] - Open 'New Account' modal
+2024-12-22 10:33:00.738 INFO [main] [pages.NewAccountModal] - Fill Account Information on 'New Account' modal 'Donnelly-Bauch'
+2024-12-22 10:33:00.740 INFO [main] [wrappers.Input] - Writing 'Donnelly-Bauch' into 'Account Name'
+2024-12-22 10:33:02.446 INFO [main] [wrappers.Picklist] - Selecting 'Hot' inside picklist 'Rating'
+2024-12-22 10:33:03.196 INFO [main] [wrappers.Input] - Writing '692-067-0179' into 'Phone'
+2024-12-22 10:33:03.419 INFO [main] [wrappers.Input] - Writing '(402) 463-5557' into 'Fax'
+2024-12-22 10:33:03.677 INFO [main] [wrappers.Input] - Writing '403-97-5771' into 'Account Number'
+2024-12-22 10:33:03.923 INFO [main] [wrappers.Input] - Writing '2' into 'Employees'
+2024-12-22 10:33:04.092 INFO [main] [pages.NewAccountModal] - Fill Address Information on 'New Account' modal 'Donnelly-Bauch'
+2024-12-22 10:33:04.092 INFO [main] [wrappers.TextArea] - Writing '96651 Drema Lake' into 'Billing Street' textarea
+2024-12-22 10:33:04.604 INFO [main] [wrappers.TextArea] - Writing '03822 Weissnat Islands' into 'Shipping Street' textarea
+2024-12-22 10:33:05.331 INFO [main] [wrappers.Input] - Writing 'West Shaneka' into 'Billing City'
+2024-12-22 10:33:05.812 INFO [main] [wrappers.Input] - Writing 'Alaska' into 'Billing State/Province'
+2024-12-22 10:33:06.082 INFO [main] [wrappers.Input] - Writing 'West Willian' into 'Shipping City'
+2024-12-22 10:33:06.449 INFO [main] [wrappers.Input] - Writing 'Arizona' into 'Shipping State/Province'
+2024-12-22 10:33:06.686 INFO [main] [wrappers.Input] - Writing '06359-1898' into 'Billing Zip/Postal Code'
+2024-12-22 10:33:06.960 INFO [main] [wrappers.Input] - Writing 'Togo' into 'Billing Country'
+2024-12-22 10:33:07.122 INFO [main] [wrappers.Input] - Writing '83338' into 'Shipping Zip/Postal Code'
+2024-12-22 10:33:07.315 INFO [main] [wrappers.Input] - Writing 'Cocos (Keeling) Islands' into 'Shipping Country'
+2024-12-22 10:33:07.904 INFO [main] [pages.NewAccountModal] - Fill Additional Information on 'New Account' modal 'Donnelly-Bauch'
+2024-12-22 10:33:07.905 INFO [main] [wrappers.Picklist] - Selecting 'High' inside picklist 'Customer Priority'
+2024-12-22 10:33:08.290 INFO [main] [wrappers.Picklist] - Selecting 'Gold' inside picklist 'SLA'
+2024-12-22 10:33:08.640 INFO [main] [wrappers.Input] - Writing '5' into 'SLA Serial Number'
+2024-12-22 10:33:08.767 INFO [main] [wrappers.Picklist] - Selecting 'Yes' inside picklist 'Upsell Opportunity'
+2024-12-22 10:33:09.114 INFO [main] [wrappers.Picklist] - Selecting 'Yes' inside picklist 'Active'
+2024-12-22 10:33:09.422 INFO [main] [pages.NewAccountModal] - Click 'Save' button on 'New Account' modal
+2024-12-22 10:33:09.620 INFO [main] [tests.TestListener] - ======================================== FINISHED TEST checkCreateAccount Duration: 19s ========================================
+

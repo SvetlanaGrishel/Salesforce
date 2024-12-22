@@ -1,8 +1,10 @@
 package wrappers;
 
+import lombok.extern.log4j.Log4j2;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+@Log4j2
 public class Input {
 
     private final String INPUT_PATTERN = "//label[text()='%s']//ancestor::lightning-input//input";
@@ -16,6 +18,7 @@ public class Input {
     }
 
     public void write(String text) {
+        log.info("Writing '{}' into '{}'", text, label);
         driver.findElement(By.xpath(String.format(INPUT_PATTERN, label))).
                 sendKeys(text);
     }
