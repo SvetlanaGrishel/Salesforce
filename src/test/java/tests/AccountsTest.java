@@ -36,6 +36,10 @@ public class AccountsTest extends BaseTest {
             .active("Yes")
             .build();
 
+    Account accountWithAccountNameOnly = Account.builder()
+            .accountName(faker.company().name())
+            .build();
+
     @Test(testName = "Create a new account with full information", description = "Create a new account with account, " +
             "address, additional information")
     @Description("Create a new account in 'Salesforce' with valid data")
@@ -43,5 +47,13 @@ public class AccountsTest extends BaseTest {
         log.info("Create a new account in 'Salesforce' system");
         loginStep.login();
         accountStep.create(account_full);
+    }
+
+    @Test(testName = "Create a new account with Account Name only", description = "Create a new account with Account Name only")
+    @Description("Create a new account with Account Name only with valid data")
+    public void checkCreateAccountWithAccountNameOnly() {
+        log.info("Create a new account in 'Salesforce' system with Account Name only");
+        loginStep.login();
+        accountStep.create(accountWithAccountNameOnly);
     }
 }

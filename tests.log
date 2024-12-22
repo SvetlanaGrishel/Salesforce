@@ -253,3 +253,104 @@
 2024-12-22 10:33:09.422 INFO [main] [pages.NewAccountModal] - Click 'Save' button on 'New Account' modal
 2024-12-22 10:33:09.620 INFO [main] [tests.TestListener] - ======================================== FINISHED TEST checkCreateAccount Duration: 19s ========================================
 
+2024-12-22 11:05:02.165 INFO [main] [tests.TestListener] - ======================================== STARTING TEST checkCreateAccountWithAccountNameOnly ========================================
+
+2024-12-22 11:05:02.227 INFO [main] [tests.AccountsTest] - Create a new account in 'Salesforce' system with Account Name only
+2024-12-22 11:05:02.227 INFO [main] [steps.LoginStep] - Login to the 'Salesforce' system with credentials
+2024-12-22 11:05:02.228 INFO [main] [pages.LoginPage] - Open 'Login' page
+2024-12-22 11:05:03.317 INFO [main] [pages.LoginPage] - Log in using credentials 'tborodich@tms.sandbox' and 'Password001'
+2024-12-22 11:05:05.917 INFO [main] [pages.HomePage] - Open 'Homepage' page
+2024-12-22 11:05:10.980 INFO [main] [steps.AccountStep] - Creating new account, filling information
+2024-12-22 11:05:10.981 INFO [main] [pages.HomePage] - Option 'Accounts' is selected in the menu
+2024-12-22 11:05:11.889 INFO [main] [pages.NewAccountModal] - Open 'New Account' modal
+2024-12-22 11:05:13.207 INFO [main] [pages.NewAccountModal] - Fill Account Information on 'New Account' modal 'Predovic Group'
+2024-12-22 11:05:13.208 INFO [main] [wrappers.Input] - Writing 'Predovic Group' into 'Account Name'
+2024-12-22 11:05:15.359 INFO [main] [wrappers.Picklist] - Selecting 'Hot' inside picklist 'Rating'
+2024-12-22 11:05:16.296 INFO [main] [wrappers.Input] - Writing '' into 'Phone'
+2024-12-22 11:05:16.592 INFO [main] [wrappers.Input] - Writing '' into 'Fax'
+2024-12-22 11:05:16.751 INFO [main] [wrappers.Input] - Writing '' into 'Account Number'
+2024-12-22 11:05:16.856 INFO [main] [wrappers.Input] - Writing '' into 'Employees'
+2024-12-22 11:05:16.956 INFO [main] [pages.NewAccountModal] - Fill Address Information on 'New Account' modal 'Predovic Group'
+2024-12-22 11:05:16.957 INFO [main] [wrappers.TextArea] - Writing '' into 'Billing Street' textarea
+2024-12-22 11:05:17.055 INFO [main] [wrappers.TextArea] - Writing '' into 'Shipping Street' textarea
+2024-12-22 11:05:17.144 INFO [main] [wrappers.Input] - Writing '' into 'Billing City'
+2024-12-22 11:05:17.242 INFO [main] [wrappers.Input] - Writing '' into 'Billing State/Province'
+2024-12-22 11:05:17.344 INFO [main] [wrappers.Input] - Writing '' into 'Shipping City'
+2024-12-22 11:05:17.441 INFO [main] [wrappers.Input] - Writing '' into 'Shipping State/Province'
+2024-12-22 11:05:17.539 INFO [main] [wrappers.Input] - Writing '' into 'Billing Zip/Postal Code'
+2024-12-22 11:05:17.869 INFO [main] [wrappers.Input] - Writing '' into 'Billing Country'
+2024-12-22 11:05:17.973 INFO [main] [wrappers.Input] - Writing '' into 'Shipping Zip/Postal Code'
+2024-12-22 11:05:18.068 INFO [main] [wrappers.Input] - Writing '' into 'Shipping Country'
+2024-12-22 11:05:18.254 INFO [main] [pages.NewAccountModal] - Fill Additional Information on 'New Account' modal 'Predovic Group'
+2024-12-22 11:05:18.255 INFO [main] [wrappers.Picklist] - Selecting 'High' inside picklist 'Customer Priority'
+2024-12-22 11:05:19.435 INFO [main] [tests.TestListener] - ======================================== FAILED TEST checkCreateAccountWithAccountNameOnly Duration: 17s ========================================
+
+2024-12-22 11:05:47.326 INFO [main] [tests.TestListener] - ======================================== STARTING TEST checkCreateAccountWithAccountNameOnly ========================================
+
+2024-12-22 11:05:47.422 INFO [main] [tests.AccountsTest] - Create a new account in 'Salesforce' system with Account Name only
+2024-12-22 11:05:47.422 INFO [main] [steps.LoginStep] - Login to the 'Salesforce' system with credentials
+2024-12-22 11:05:47.423 INFO [main] [pages.LoginPage] - Open 'Login' page
+2024-12-22 11:05:48.064 INFO [main] [pages.LoginPage] - Log in using credentials 'tborodich@tms.sandbox' and 'Password001'
+2024-12-22 11:05:49.684 INFO [main] [pages.HomePage] - Open 'Homepage' page
+2024-12-22 11:05:54.076 INFO [main] [steps.AccountStep] - Creating new account, filling information
+2024-12-22 11:05:54.078 INFO [main] [pages.HomePage] - Option 'Accounts' is selected in the menu
+2024-12-22 11:05:55.663 INFO [main] [pages.NewAccountModal] - Open 'New Account' modal
+2024-12-22 11:05:56.945 INFO [main] [pages.NewAccountModal] - Fill Account Information on 'New Account' modal 'Dach, Brekke and Balistreri'
+2024-12-22 11:05:56.947 INFO [main] [wrappers.Input] - Writing 'Dach, Brekke and Balistreri' into 'Account Name'
+2024-12-22 11:05:58.759 INFO [main] [wrappers.Picklist] - Selecting 'Hot' inside picklist 'Rating'
+2024-12-22 11:05:59.744 INFO [main] [wrappers.Input] - Writing '' into 'Phone'
+2024-12-22 11:06:00.037 INFO [main] [wrappers.Input] - Writing '' into 'Fax'
+2024-12-22 11:06:00.128 INFO [main] [wrappers.Input] - Writing '' into 'Account Number'
+2024-12-22 11:06:00.230 INFO [main] [wrappers.Input] - Writing '' into 'Employees'
+2024-12-22 11:06:00.330 INFO [main] [pages.NewAccountModal] - Fill Address Information on 'New Account' modal 'Dach, Brekke and Balistreri'
+2024-12-22 11:06:00.331 INFO [main] [wrappers.TextArea] - Writing '' into 'Billing Street' textarea
+2024-12-22 11:06:00.427 INFO [main] [wrappers.TextArea] - Writing '' into 'Shipping Street' textarea
+2024-12-22 11:06:00.549 INFO [main] [wrappers.Input] - Writing '' into 'Billing City'
+2024-12-22 11:06:00.645 INFO [main] [wrappers.Input] - Writing '' into 'Billing State/Province'
+2024-12-22 11:06:00.742 INFO [main] [wrappers.Input] - Writing '' into 'Shipping City'
+2024-12-22 11:06:00.852 INFO [main] [wrappers.Input] - Writing '' into 'Shipping State/Province'
+2024-12-22 11:06:00.948 INFO [main] [wrappers.Input] - Writing '' into 'Billing Zip/Postal Code'
+2024-12-22 11:06:01.297 INFO [main] [wrappers.Input] - Writing '' into 'Billing Country'
+2024-12-22 11:06:01.393 INFO [main] [wrappers.Input] - Writing '' into 'Shipping Zip/Postal Code'
+2024-12-22 11:06:01.479 INFO [main] [wrappers.Input] - Writing '' into 'Shipping Country'
+2024-12-22 11:06:01.663 INFO [main] [pages.NewAccountModal] - Fill Additional Information on 'New Account' modal 'Dach, Brekke and Balistreri'
+2024-12-22 11:06:01.664 INFO [main] [wrappers.Picklist] - Selecting 'High' inside picklist 'Customer Priority'
+2024-12-22 11:06:02.891 INFO [main] [tests.TestListener] - ======================================== FAILED TEST checkCreateAccountWithAccountNameOnly Duration: 15s ========================================
+
+2024-12-22 11:06:32.048 INFO [main] [tests.TestListener] - ======================================== STARTING TEST checkCreateAccountWithAccountNameOnly ========================================
+
+2024-12-22 11:06:32.098 INFO [main] [tests.AccountsTest] - Create a new account in 'Salesforce' system with Account Name only
+2024-12-22 11:06:32.098 INFO [main] [steps.LoginStep] - Login to the 'Salesforce' system with credentials
+2024-12-22 11:06:32.099 INFO [main] [pages.LoginPage] - Open 'Login' page
+2024-12-22 11:06:32.941 INFO [main] [pages.LoginPage] - Log in using credentials 'tborodich@tms.sandbox' and 'Password001'
+2024-12-22 11:06:35.639 INFO [main] [pages.HomePage] - Open 'Homepage' page
+2024-12-22 11:06:39.853 INFO [main] [steps.AccountStep] - Creating new account, filling information
+2024-12-22 11:06:39.854 INFO [main] [pages.HomePage] - Option 'Accounts' is selected in the menu
+2024-12-22 11:06:42.337 INFO [main] [pages.NewAccountModal] - Open 'New Account' modal
+2024-12-22 11:06:43.799 INFO [main] [pages.NewAccountModal] - Fill Account Information on 'New Account' modal 'Graham, Cruickshank and Hagenes'
+2024-12-22 11:06:43.800 INFO [main] [wrappers.Input] - Writing 'Graham, Cruickshank and Hagenes' into 'Account Name'
+2024-12-22 11:06:45.728 INFO [main] [wrappers.Picklist] - Selecting 'Hot' inside picklist 'Rating'
+2024-12-22 11:06:46.266 INFO [main] [wrappers.Input] - Writing '' into 'Phone'
+2024-12-22 11:06:46.349 INFO [main] [wrappers.Input] - Writing '' into 'Fax'
+2024-12-22 11:06:46.465 INFO [main] [wrappers.Input] - Writing '' into 'Account Number'
+2024-12-22 11:06:46.670 INFO [main] [wrappers.Input] - Writing '' into 'Employees'
+2024-12-22 11:06:46.771 INFO [main] [pages.NewAccountModal] - Fill Address Information on 'New Account' modal 'Graham, Cruickshank and Hagenes'
+2024-12-22 11:06:46.773 INFO [main] [wrappers.TextArea] - Writing '' into 'Billing Street' textarea
+2024-12-22 11:06:46.865 INFO [main] [wrappers.TextArea] - Writing '' into 'Shipping Street' textarea
+2024-12-22 11:06:46.979 INFO [main] [wrappers.Input] - Writing '' into 'Billing City'
+2024-12-22 11:06:47.074 INFO [main] [wrappers.Input] - Writing '' into 'Billing State/Province'
+2024-12-22 11:06:47.181 INFO [main] [wrappers.Input] - Writing '' into 'Shipping City'
+2024-12-22 11:06:47.293 INFO [main] [wrappers.Input] - Writing '' into 'Shipping State/Province'
+2024-12-22 11:06:47.674 INFO [main] [wrappers.Input] - Writing '' into 'Billing Zip/Postal Code'
+2024-12-22 11:06:47.776 INFO [main] [wrappers.Input] - Writing '' into 'Billing Country'
+2024-12-22 11:06:47.871 INFO [main] [wrappers.Input] - Writing '' into 'Shipping Zip/Postal Code'
+2024-12-22 11:06:47.970 INFO [main] [wrappers.Input] - Writing '' into 'Shipping Country'
+2024-12-22 11:06:48.062 INFO [main] [pages.NewAccountModal] - Fill Additional Information on 'New Account' modal 'Graham, Cruickshank and Hagenes'
+2024-12-22 11:06:48.062 INFO [main] [wrappers.Picklist] - Selecting 'High' inside picklist 'Customer Priority'
+2024-12-22 11:06:48.382 INFO [main] [wrappers.Picklist] - Selecting 'Gold' inside picklist 'SLA'
+2024-12-22 11:06:48.839 INFO [main] [wrappers.Input] - Writing '' into 'SLA Serial Number'
+2024-12-22 11:06:48.940 INFO [main] [wrappers.Picklist] - Selecting 'No' inside picklist 'Upsell Opportunity'
+2024-12-22 11:06:49.240 INFO [main] [wrappers.Picklist] - Selecting 'No' inside picklist 'Active'
+2024-12-22 11:06:49.547 INFO [main] [pages.NewAccountModal] - Click 'Save' button on 'New Account' modal
+2024-12-22 11:06:49.739 INFO [main] [tests.TestListener] - ======================================== FINISHED TEST checkCreateAccountWithAccountNameOnly Duration: 17s ========================================
+
