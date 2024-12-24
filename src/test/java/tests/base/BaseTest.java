@@ -41,15 +41,18 @@ public class BaseTest {
         if (browser.equalsIgnoreCase("chrome")) {
             ChromeOptions options = new ChromeOptions();
             options.addArguments("start-maximized");
+            options.addArguments("--headless");
             options.addArguments("--disable-notifications");
             driver = new ChromeDriver(options);
         } else if (browser.equalsIgnoreCase("edge")) {
             EdgeOptions edgeOptions = new EdgeOptions();
             edgeOptions.addArguments("start-maximized");
+            edgeOptions.addArguments("--headless");
             driver = new EdgeDriver(edgeOptions);
         } else if (browser.equalsIgnoreCase("firefox")) {
             FirefoxOptions firefoxOptions = new FirefoxOptions();
             firefoxOptions.addArguments("start-maximized");
+            firefoxOptions.addArguments("--headless");
             driver = new FirefoxDriver(firefoxOptions);
         }
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
