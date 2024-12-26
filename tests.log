@@ -354,3 +354,222 @@
 2024-12-22 11:06:49.547 INFO [main] [pages.NewAccountModal] - Click 'Save' button on 'New Account' modal
 2024-12-22 11:06:49.739 INFO [main] [tests.TestListener] - ======================================== FINISHED TEST checkCreateAccountWithAccountNameOnly Duration: 17s ========================================
 
+2024-12-24 23:48:38.714 INFO [main] [tests.TestListener] - ======================================== STARTING TEST checkCreateAccountWithAccountNameOnly ========================================
+
+2024-12-24 23:48:38.741 INFO [main] [tests.AccountsTest] - Create a new account in 'Salesforce' system with Account Name only
+2024-12-24 23:48:38.741 INFO [main] [steps.LoginStep] - Login to the 'Salesforce' system with credentials
+2024-12-24 23:48:38.742 INFO [main] [pages.LoginPage] - Open 'Login' page
+2024-12-24 23:48:39.486 INFO [main] [pages.LoginPage] - Log in using credentials 'tborodich@tms.sandbox' and 'Password001'
+2024-12-24 23:48:41.621 INFO [main] [pages.HomePage] - Open 'Homepage' page
+2024-12-24 23:48:43.526 INFO [main] [steps.AccountStep] - Creating new account, filling information
+2024-12-24 23:48:43.527 INFO [main] [pages.HomePage] - Option 'Accounts' is selected in the menu
+2024-12-24 23:48:44.227 INFO [main] [pages.NewAccountModal] - Open 'New Account' modal
+2024-12-24 23:48:44.901 INFO [main] [pages.NewAccountModal] - Fill Account Information on 'New Account' modal 'O'Kon-Gibson'
+2024-12-24 23:48:44.915 INFO [main] [wrappers.Input] - Writing 'O'Kon-Gibson' into 'Account Name'
+2024-12-24 23:48:47.374 INFO [main] [wrappers.Picklist] - Selecting 'Hot' inside picklist 'Rating'
+2024-12-24 23:48:47.564 INFO [main] [wrappers.Input] - Writing '' into 'Phone'
+2024-12-24 23:48:47.606 INFO [main] [wrappers.Input] - Writing '' into 'Fax'
+2024-12-24 23:48:47.703 INFO [main] [wrappers.Input] - Writing '' into 'Account Number'
+2024-12-24 23:48:47.741 INFO [main] [wrappers.Input] - Writing '' into 'Employees'
+2024-12-24 23:48:47.892 INFO [main] [pages.NewAccountModal] - Fill Address Information on 'New Account' modal 'O'Kon-Gibson'
+2024-12-24 23:48:47.900 INFO [main] [wrappers.TextArea] - Writing '' into 'Billing Street' textarea
+2024-12-24 23:48:47.940 INFO [main] [wrappers.TextArea] - Writing '' into 'Shipping Street' textarea
+2024-12-24 23:48:48.023 INFO [main] [wrappers.Input] - Writing '' into 'Billing City'
+2024-12-24 23:48:48.084 INFO [main] [wrappers.Input] - Writing '' into 'Billing State/Province'
+2024-12-24 23:48:48.125 INFO [main] [wrappers.Input] - Writing '' into 'Shipping City'
+2024-12-24 23:48:48.256 INFO [main] [wrappers.Input] - Writing '' into 'Shipping State/Province'
+2024-12-24 23:48:48.302 INFO [main] [wrappers.Input] - Writing '' into 'Billing Zip/Postal Code'
+2024-12-24 23:48:48.338 INFO [main] [wrappers.Input] - Writing '' into 'Billing Country'
+2024-12-24 23:48:48.374 INFO [main] [wrappers.Input] - Writing '' into 'Shipping Zip/Postal Code'
+2024-12-24 23:48:48.409 INFO [main] [wrappers.Input] - Writing '' into 'Shipping Country'
+2024-12-24 23:48:48.445 INFO [main] [pages.NewAccountModal] - Fill Additional Information on 'New Account' modal 'O'Kon-Gibson'
+2024-12-24 23:48:48.445 INFO [main] [wrappers.Picklist] - Selecting 'High' inside picklist 'Customer Priority'
+2024-12-24 23:48:48.725 INFO [main] [wrappers.Picklist] - Selecting 'Gold' inside picklist 'SLA'
+2024-12-24 23:48:48.910 INFO [main] [wrappers.Input] - Writing '' into 'SLA Serial Number'
+2024-12-24 23:48:48.953 INFO [main] [wrappers.Picklist] - Selecting 'No' inside picklist 'Upsell Opportunity'
+2024-12-24 23:48:49.082 INFO [main] [wrappers.Picklist] - Selecting 'No' inside picklist 'Active'
+2024-12-24 23:48:59.179 INFO [main] [tests.TestListener] - ======================================== FAILED TEST checkCreateAccountWithAccountNameOnly Duration: 20s ========================================
+
+2024-12-24 23:49:19.199 INFO [main] [tests.TestListener] - ======================================== STARTING TEST checkCreateAccountWithAccountNameOnly ========================================
+
+2024-12-24 23:49:19.225 INFO [main] [tests.AccountsTest] - Create a new account in 'Salesforce' system with Account Name only
+2024-12-24 23:49:19.225 INFO [main] [steps.LoginStep] - Login to the 'Salesforce' system with credentials
+2024-12-24 23:49:19.226 INFO [main] [pages.LoginPage] - Open 'Login' page
+2024-12-24 23:49:21.010 INFO [main] [pages.LoginPage] - Log in using credentials 'tborodich@tms.sandbox' and 'Password001'
+2024-12-24 23:49:22.221 INFO [main] [pages.HomePage] - Open 'Homepage' page
+2024-12-24 23:49:24.778 INFO [main] [steps.AccountStep] - Creating new account, filling information
+2024-12-24 23:49:24.779 INFO [main] [pages.HomePage] - Option 'Accounts' is selected in the menu
+2024-12-24 23:49:25.521 INFO [main] [pages.NewAccountModal] - Open 'New Account' modal
+2024-12-24 23:49:26.459 INFO [main] [pages.NewAccountModal] - Fill Account Information on 'New Account' modal 'Walsh, Ledner and Boyle'
+2024-12-24 23:49:26.461 INFO [main] [wrappers.Input] - Writing 'Walsh, Ledner and Boyle' into 'Account Name'
+2024-12-24 23:49:27.421 INFO [main] [wrappers.Picklist] - Selecting 'Hot' inside picklist 'Rating'
+2024-12-24 23:49:37.602 INFO [main] [tests.TestListener] - ======================================== FAILED TEST checkCreateAccountWithAccountNameOnly Duration: 18s ========================================
+
+2024-12-26 15:35:05.330 INFO [main] [tests.TestListener] - ======================================== STARTING TEST checkCreateAccountWithAccountNameOnly ========================================
+
+2024-12-26 15:35:05.365 INFO [main] [tests.AccountsTest] - Create a new account in 'Salesforce' system with Account Name only
+2024-12-26 15:35:05.365 INFO [main] [steps.LoginStep] - Login to the 'Salesforce' system with credentials
+2024-12-26 15:35:05.365 INFO [main] [pages.LoginPage] - Open 'Login' page
+2024-12-26 15:35:06.167 INFO [main] [pages.LoginPage] - Log in using credentials '' and ''
+2024-12-26 15:35:06.454 INFO [main] [pages.HomePage] - Open 'Homepage' page
+2024-12-26 15:35:27.383 ERROR [main] [pages.HomePage] - Expected condition failed: waiting for visibility of element located by By.xpath: //img[@alt='User']//ancestor::button[@type='button'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.25'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\SVETLA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:16567}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:16567/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 938e31fdb00b4a34551c85243d388d92
+2024-12-26 15:35:27.396 INFO [main] [tests.TestListener] - ======================================== FAILED TEST checkCreateAccountWithAccountNameOnly Duration: 22s ========================================
+
+2024-12-26 15:35:50.892 INFO [main] [tests.TestListener] - ======================================== STARTING TEST checkCreateAccountWithAccountNameOnly ========================================
+
+2024-12-26 15:35:50.926 INFO [main] [tests.AccountsTest] - Create a new account in 'Salesforce' system with Account Name only
+2024-12-26 15:35:50.926 INFO [main] [steps.LoginStep] - Login to the 'Salesforce' system with credentials
+2024-12-26 15:35:50.926 INFO [main] [pages.LoginPage] - Open 'Login' page
+2024-12-26 15:35:51.731 INFO [main] [pages.LoginPage] - Log in using credentials '' and ''
+2024-12-26 15:35:51.953 INFO [main] [pages.HomePage] - Open 'Homepage' page
+2024-12-26 15:36:12.799 ERROR [main] [pages.HomePage] - Expected condition failed: waiting for visibility of element located by By.xpath: //img[@alt='User']//ancestor::button[@type='button'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.25'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\SVETLA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:16618}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:16618/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d2e5ef6d9c70e24f2ec756d7282f7ddd
+2024-12-26 15:36:12.821 INFO [main] [tests.TestListener] - ======================================== FAILED TEST checkCreateAccountWithAccountNameOnly Duration: 21s ========================================
+
+2024-12-26 15:39:50.220 INFO [main] [tests.TestListener] - ======================================== STARTING TEST checkCreateAccountWithAccountNameOnly ========================================
+
+2024-12-26 15:39:50.267 INFO [main] [tests.AccountsTest] - Create a new account in 'Salesforce' system with Account Name only
+2024-12-26 15:39:50.267 INFO [main] [steps.LoginStep] - Login to the 'Salesforce' system with credentials
+2024-12-26 15:39:50.268 INFO [main] [pages.LoginPage] - Open 'Login' page
+2024-12-26 15:39:50.994 INFO [main] [pages.LoginPage] - Log in using credentials 'tborodich@tms.sandbox' and 'Password001'
+2024-12-26 15:39:52.389 INFO [main] [pages.HomePage] - Open 'Homepage' page
+2024-12-26 15:39:56.125 INFO [main] [steps.AccountStep] - Creating new account, filling information
+2024-12-26 15:39:56.126 INFO [main] [pages.HomePage] - Option 'Accounts' is selected in the menu
+2024-12-26 15:39:56.820 INFO [main] [pages.NewAccountModal] - Open 'New Account' modal
+2024-12-26 15:39:57.161 INFO [main] [pages.NewAccountModal] - Fill Account Information on 'New Account' modal 'Turner, Collins and Corkery'
+2024-12-26 15:39:57.172 INFO [main] [wrappers.Input] - Writing 'Turner, Collins and Corkery' into 'Account Name'
+2024-12-26 15:39:59.015 INFO [main] [wrappers.Picklist] - Selecting 'Hot' inside picklist 'Rating'
+2024-12-26 15:40:09.202 INFO [main] [tests.TestListener] - ======================================== FAILED TEST checkCreateAccountWithAccountNameOnly Duration: 18s ========================================
+
+2024-12-26 15:43:30.447 INFO [main] [tests.TestListener] - ======================================== STARTING TEST checkCreateAccount ========================================
+
+2024-12-26 15:43:30.478 INFO [main] [tests.AccountsTest] - Create a new account in 'Salesforce' system
+2024-12-26 15:43:30.478 INFO [main] [steps.LoginStep] - Login to the 'Salesforce' system with credentials
+2024-12-26 15:43:30.479 INFO [main] [pages.LoginPage] - Open 'Login' page
+2024-12-26 15:43:31.211 INFO [main] [pages.LoginPage] - Log in using credentials 'tborodich@tms.sandbox' and 'Password001'
+2024-12-26 15:43:32.562 INFO [main] [pages.HomePage] - Open 'Homepage' page
+2024-12-26 15:43:35.802 INFO [main] [steps.AccountStep] - Creating new account, filling information
+2024-12-26 15:43:35.802 INFO [main] [pages.HomePage] - Option 'Accounts' is selected in the menu
+2024-12-26 15:43:36.518 INFO [main] [pages.NewAccountModal] - Open 'New Account' modal
+2024-12-26 15:43:37.221 INFO [main] [pages.NewAccountModal] - Fill Account Information on 'New Account' modal 'Collins-Feest'
+2024-12-26 15:43:37.224 INFO [main] [wrappers.Input] - Writing 'Collins-Feest' into 'Account Name'
+2024-12-26 15:43:38.392 INFO [main] [wrappers.Picklist] - Selecting 'Hot' inside picklist 'Rating'
+2024-12-26 15:43:38.706 INFO [main] [wrappers.Input] - Writing '491.367.4972' into 'Phone'
+2024-12-26 15:43:39.167 INFO [main] [wrappers.Input] - Writing '1-007-599-9086' into 'Fax'
+2024-12-26 15:43:39.428 INFO [main] [wrappers.Input] - Writing '678-90-9768' into 'Account Number'
+2024-12-26 15:43:39.575 INFO [main] [wrappers.Input] - Writing '0' into 'Employees'
+2024-12-26 15:43:39.643 INFO [main] [pages.NewAccountModal] - Fill Address Information on 'New Account' modal 'Collins-Feest'
+2024-12-26 15:43:39.652 INFO [main] [wrappers.TextArea] - Writing '368 Jacobs Hills' into 'Billing Street' textarea
+2024-12-26 15:43:39.858 INFO [main] [wrappers.TextArea] - Writing '5448 Jared Ridge' into 'Shipping Street' textarea
+2024-12-26 15:43:40.059 INFO [main] [wrappers.Input] - Writing 'New Hank' into 'Billing City'
+2024-12-26 15:43:40.176 INFO [main] [wrappers.Input] - Writing 'South Carolina' into 'Billing State/Province'
+2024-12-26 15:43:40.298 INFO [main] [wrappers.Input] - Writing 'Parisfort' into 'Shipping City'
+2024-12-26 15:43:40.393 INFO [main] [wrappers.Input] - Writing 'New Jersey' into 'Shipping State/Province'
+2024-12-26 15:43:40.488 INFO [main] [wrappers.Input] - Writing '29556-0210' into 'Billing Zip/Postal Code'
+2024-12-26 15:43:40.588 INFO [main] [wrappers.Input] - Writing 'Turkey' into 'Billing Country'
+2024-12-26 15:43:40.663 INFO [main] [wrappers.Input] - Writing '23772' into 'Shipping Zip/Postal Code'
+2024-12-26 15:43:40.733 INFO [main] [wrappers.Input] - Writing 'Isle of Man' into 'Shipping Country'
+2024-12-26 15:43:40.838 INFO [main] [pages.NewAccountModal] - Fill Additional Information on 'New Account' modal 'Collins-Feest'
+2024-12-26 15:43:40.839 INFO [main] [wrappers.Picklist] - Selecting 'High' inside picklist 'Customer Priority'
+2024-12-26 15:43:41.055 INFO [main] [wrappers.Picklist] - Selecting 'Gold' inside picklist 'SLA'
+2024-12-26 15:43:41.193 INFO [main] [wrappers.Input] - Writing '5' into 'SLA Serial Number'
+2024-12-26 15:43:41.240 INFO [main] [wrappers.Picklist] - Selecting 'Yes' inside picklist 'Upsell Opportunity'
+2024-12-26 15:43:41.372 INFO [main] [wrappers.Picklist] - Selecting 'Yes' inside picklist 'Active'
+2024-12-26 15:43:51.483 INFO [main] [tests.TestListener] - ======================================== FAILED TEST checkCreateAccount Duration: 21s ========================================
+
+2024-12-26 15:43:52.988 INFO [main] [tests.TestListener] - ======================================== STARTING TEST checkCreateAccountWithAccountNameOnly ========================================
+
+2024-12-26 15:43:52.990 INFO [main] [tests.AccountsTest] - Create a new account in 'Salesforce' system with Account Name only
+2024-12-26 15:43:52.990 INFO [main] [steps.LoginStep] - Login to the 'Salesforce' system with credentials
+2024-12-26 15:43:52.990 INFO [main] [pages.LoginPage] - Open 'Login' page
+2024-12-26 15:43:53.524 INFO [main] [pages.LoginPage] - Log in using credentials 'tborodich@tms.sandbox' and 'Password001'
+2024-12-26 15:43:57.311 INFO [main] [pages.HomePage] - Open 'Homepage' page
+2024-12-26 15:43:58.427 INFO [main] [steps.AccountStep] - Creating new account, filling information
+2024-12-26 15:43:58.428 INFO [main] [pages.HomePage] - Option 'Accounts' is selected in the menu
+2024-12-26 15:43:59.043 INFO [main] [pages.NewAccountModal] - Open 'New Account' modal
+2024-12-26 15:43:59.621 INFO [main] [pages.NewAccountModal] - Fill Account Information on 'New Account' modal 'Beier, Willms and Feest'
+2024-12-26 15:43:59.621 INFO [main] [wrappers.Input] - Writing 'Beier, Willms and Feest' into 'Account Name'
+2024-12-26 15:44:01.429 INFO [main] [wrappers.Picklist] - Selecting 'Hot' inside picklist 'Rating'
+2024-12-26 15:44:01.579 INFO [main] [wrappers.Input] - Writing '' into 'Phone'
+2024-12-26 15:44:01.623 INFO [main] [wrappers.Input] - Writing '' into 'Fax'
+2024-12-26 15:44:01.659 INFO [main] [wrappers.Input] - Writing '' into 'Account Number'
+2024-12-26 15:44:01.696 INFO [main] [wrappers.Input] - Writing '' into 'Employees'
+2024-12-26 15:44:01.730 INFO [main] [pages.NewAccountModal] - Fill Address Information on 'New Account' modal 'Beier, Willms and Feest'
+2024-12-26 15:44:01.730 INFO [main] [wrappers.TextArea] - Writing '' into 'Billing Street' textarea
+2024-12-26 15:44:01.772 INFO [main] [wrappers.TextArea] - Writing '' into 'Shipping Street' textarea
+2024-12-26 15:44:01.808 INFO [main] [wrappers.Input] - Writing '' into 'Billing City'
+2024-12-26 15:44:01.928 INFO [main] [wrappers.Input] - Writing '' into 'Billing State/Province'
+2024-12-26 15:44:01.967 INFO [main] [wrappers.Input] - Writing '' into 'Shipping City'
+2024-12-26 15:44:02.002 INFO [main] [wrappers.Input] - Writing '' into 'Shipping State/Province'
+2024-12-26 15:44:02.037 INFO [main] [wrappers.Input] - Writing '' into 'Billing Zip/Postal Code'
+2024-12-26 15:44:02.072 INFO [main] [wrappers.Input] - Writing '' into 'Billing Country'
+2024-12-26 15:44:02.108 INFO [main] [wrappers.Input] - Writing '' into 'Shipping Zip/Postal Code'
+2024-12-26 15:44:02.145 INFO [main] [wrappers.Input] - Writing '' into 'Shipping Country'
+2024-12-26 15:44:02.184 INFO [main] [pages.NewAccountModal] - Fill Additional Information on 'New Account' modal 'Beier, Willms and Feest'
+2024-12-26 15:44:02.184 INFO [main] [wrappers.Picklist] - Selecting 'High' inside picklist 'Customer Priority'
+2024-12-26 15:44:02.348 INFO [main] [wrappers.Picklist] - Selecting 'Gold' inside picklist 'SLA'
+2024-12-26 15:44:02.475 INFO [main] [wrappers.Input] - Writing '' into 'SLA Serial Number'
+2024-12-26 15:44:02.533 INFO [main] [wrappers.Picklist] - Selecting 'No' inside picklist 'Upsell Opportunity'
+2024-12-26 15:44:02.669 INFO [main] [wrappers.Picklist] - Selecting 'No' inside picklist 'Active'
+2024-12-26 15:44:12.966 INFO [main] [tests.TestListener] - ======================================== FAILED TEST checkCreateAccountWithAccountNameOnly Duration: 19s ========================================
+
+2024-12-26 15:46:00.487 INFO [main] [tests.TestListener] - ======================================== STARTING TEST checkCreateAccount ========================================
+
+2024-12-26 15:46:00.515 INFO [main] [tests.AccountsTest] - Create a new account in 'Salesforce' system
+2024-12-26 15:46:00.515 INFO [main] [steps.LoginStep] - Login to the 'Salesforce' system with credentials
+2024-12-26 15:46:00.516 INFO [main] [pages.LoginPage] - Open 'Login' page
+2024-12-26 15:46:01.384 INFO [main] [pages.LoginPage] - Log in using credentials 'tborodich@tms.sandbox' and 'Password001'
+2024-12-26 15:46:07.439 INFO [main] [pages.HomePage] - Open 'Homepage' page
+2024-12-26 15:46:08.581 INFO [main] [steps.AccountStep] - Creating new account, filling information
+2024-12-26 15:46:08.581 INFO [main] [pages.HomePage] - Option 'Accounts' is selected in the menu
+2024-12-26 15:46:09.226 INFO [main] [pages.NewAccountModal] - Open 'New Account' modal
+2024-12-26 15:46:09.773 INFO [main] [pages.NewAccountModal] - Fill Account Information on 'New Account' modal 'Bernier-Hane'
+2024-12-26 15:46:09.774 INFO [main] [wrappers.Input] - Writing 'Bernier-Hane' into 'Account Name'
+2024-12-26 15:46:11.195 INFO [main] [wrappers.Picklist] - Selecting 'Hot' inside picklist 'Rating'
+2024-12-26 15:46:21.420 INFO [main] [tests.TestListener] - ======================================== FAILED TEST checkCreateAccount Duration: 20s ========================================
+
+2024-12-26 15:46:22.881 INFO [main] [tests.TestListener] - ======================================== STARTING TEST checkCreateAccountWithAccountNameOnly ========================================
+
+2024-12-26 15:46:22.883 INFO [main] [tests.AccountsTest] - Create a new account in 'Salesforce' system with Account Name only
+2024-12-26 15:46:22.883 INFO [main] [steps.LoginStep] - Login to the 'Salesforce' system with credentials
+2024-12-26 15:46:22.884 INFO [main] [pages.LoginPage] - Open 'Login' page
+2024-12-26 15:46:23.631 INFO [main] [pages.LoginPage] - Log in using credentials 'tborodich@tms.sandbox' and 'Password001'
+2024-12-26 15:46:30.192 INFO [main] [pages.HomePage] - Open 'Homepage' page
+2024-12-26 15:46:31.227 INFO [main] [steps.AccountStep] - Creating new account, filling information
+2024-12-26 15:46:31.227 INFO [main] [pages.HomePage] - Option 'Accounts' is selected in the menu
+2024-12-26 15:46:32.199 INFO [main] [pages.NewAccountModal] - Open 'New Account' modal
+2024-12-26 15:46:32.778 INFO [main] [pages.NewAccountModal] - Fill Account Information on 'New Account' modal 'Bogan and Sons'
+2024-12-26 15:46:32.778 INFO [main] [wrappers.Input] - Writing 'Bogan and Sons' into 'Account Name'
+2024-12-26 15:46:34.722 INFO [main] [wrappers.Picklist] - Selecting 'Hot' inside picklist 'Rating'
+2024-12-26 15:46:34.881 INFO [main] [wrappers.Input] - Writing '' into 'Phone'
+2024-12-26 15:46:34.936 INFO [main] [wrappers.Input] - Writing '' into 'Fax'
+2024-12-26 15:46:35.074 INFO [main] [wrappers.Input] - Writing '' into 'Account Number'
+2024-12-26 15:46:35.125 INFO [main] [wrappers.Input] - Writing '' into 'Employees'
+2024-12-26 15:46:35.236 INFO [main] [pages.NewAccountModal] - Fill Address Information on 'New Account' modal 'Bogan and Sons'
+2024-12-26 15:46:35.237 INFO [main] [wrappers.TextArea] - Writing '' into 'Billing Street' textarea
+2024-12-26 15:46:35.348 INFO [main] [wrappers.TextArea] - Writing '' into 'Shipping Street' textarea
+2024-12-26 15:46:35.454 INFO [main] [wrappers.Input] - Writing '' into 'Billing City'
+2024-12-26 15:46:35.520 INFO [main] [wrappers.Input] - Writing '' into 'Billing State/Province'
+2024-12-26 15:46:35.718 INFO [main] [wrappers.Input] - Writing '' into 'Shipping City'
+2024-12-26 15:46:35.783 INFO [main] [wrappers.Input] - Writing '' into 'Shipping State/Province'
+2024-12-26 15:46:35.842 INFO [main] [wrappers.Input] - Writing '' into 'Billing Zip/Postal Code'
+2024-12-26 15:46:35.925 INFO [main] [wrappers.Input] - Writing '' into 'Billing Country'
+2024-12-26 15:46:35.995 INFO [main] [wrappers.Input] - Writing '' into 'Shipping Zip/Postal Code'
+2024-12-26 15:46:36.157 INFO [main] [wrappers.Input] - Writing '' into 'Shipping Country'
+2024-12-26 15:46:36.208 INFO [main] [pages.NewAccountModal] - Fill Additional Information on 'New Account' modal 'Bogan and Sons'
+2024-12-26 15:46:36.208 INFO [main] [wrappers.Picklist] - Selecting 'High' inside picklist 'Customer Priority'
+2024-12-26 15:46:36.573 INFO [main] [wrappers.Picklist] - Selecting 'Gold' inside picklist 'SLA'
+2024-12-26 15:46:36.695 INFO [main] [wrappers.Input] - Writing '' into 'SLA Serial Number'
+2024-12-26 15:46:36.729 INFO [main] [wrappers.Picklist] - Selecting 'No' inside picklist 'Upsell Opportunity'
+2024-12-26 15:46:36.854 INFO [main] [wrappers.Picklist] - Selecting 'No' inside picklist 'Active'
+2024-12-26 15:46:46.931 INFO [main] [tests.TestListener] - ======================================== FAILED TEST checkCreateAccountWithAccountNameOnly Duration: 24s ========================================
+

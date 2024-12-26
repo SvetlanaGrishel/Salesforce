@@ -14,6 +14,10 @@ on:
   pull_request:
     branches: [ "master" ]
 
+env:
+   USERNAME: ${{secrets.SF_USERNAME}}
+   PASSWORD: ${{secrets.SF_PASSWORD}}
+
 jobs:
   build:
 
@@ -28,4 +32,4 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Run test
-      run: mvn clean test
+      run: mvn clean test -DSF_USERNAME=$SF_USERNAME -DSF_PASSWORD=$SF_PASSWORD
